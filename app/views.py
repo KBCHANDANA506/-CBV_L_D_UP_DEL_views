@@ -11,5 +11,7 @@ class School_List(ListView):
     model=School
     context_object_name='schools'
 
-
+class school_detail(DetailView):
+    model=School
+    context_object_name='sclobject'
 
