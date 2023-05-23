@@ -20,6 +20,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('Home/',Home.as_view(),name='Home'),
     path('School_List/',School_List.as_view(),name='School_List'),
+    path('School_form/',School_form.as_view(),name='School_form'),
+    
+
+
+    re_path('^update/(?P<pk>\d+)/',SchoolUpdate.as_view(),name='SchoolUpdate'),
+   
+
     re_path('(?P<pk>\d+)/',school_detail.as_view(),name='school_detail'),
 
     

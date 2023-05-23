@@ -1,0 +1,23 @@
+{% extends 'app/dummy.html' %}
+{% block title %}
+<title>Update</title>
+{% endblock %}
+
+{% block body_block %}
+
+
+   
+   <form method="POST">
+      {% csrf_token %}
+
+   
+    {% endfor %}
+       
+
+      {form.as_p}
+   
+
+   </form>
+
+
+{% endblock %}

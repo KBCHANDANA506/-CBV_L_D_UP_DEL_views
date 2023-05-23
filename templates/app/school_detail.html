@@ -18,6 +18,9 @@
         <h6>name of student is {{i.sname}}</h6>
         <h6>age of student is {{i.sage}}</h6>
    {% endfor %}
-
-
+   
+   
+   <a href="{% url 'SchoolUpdate' pk=sclobject.pk %}" class="btn btn-primary">Update Data</a>
+   
+   
 {% endblock %}
