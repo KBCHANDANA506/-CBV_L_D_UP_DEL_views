@@ -20,7 +20,8 @@
    {% endfor %}
    
    
-   <a href="{% url 'SchoolUpdate' pk=sclobject.pk %}" class="btn btn-primary">Update Data</a>
+   <h6><a href="{% url 'SchoolUpdate' pk=sclobject.pk %}" class="btn btn-primary">Update Data</a></h6>
+   <h6><a href="{% url 'School_Delete' pk=sclobject.pk %}" class="btn btn-danger">Delete Data</a></h6>
    
    
 {% endblock %}
